@@ -1,6 +1,7 @@
 package com.jk.my_blog.controller;
 
 
+import com.jk.my_blog.common.lang.Result;
 import com.jk.my_blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,8 +25,8 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/test")
-    public Object test(){
-        return userService.getById(1L);
+    public Result test(){
+        return Result.success(userService.getById(1L));
     }
 
 
