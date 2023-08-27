@@ -7,3 +7,12 @@ spring:
         password: Aa123456,
     mybatis-plus:
         mapper-locations: classpath*:/mapper/**Mapper.xml
+
+jk:
+    jwt:
+        # 密钥
+        secret: adfwefrg42312fd
+        # 有效时长 7天 单位 秒
+        expire: 604800
+        #
+        header: Authorization
