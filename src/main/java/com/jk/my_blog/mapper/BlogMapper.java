@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author 玖拾伍
  * @since 2023-08-26
  */
+
 public interface BlogMapper extends BaseMapper<Blog> {
 
 }
